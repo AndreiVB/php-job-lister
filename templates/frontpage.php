@@ -9,41 +9,24 @@
 
       <div class="row marketing align-items-center">
         <div class="col-md-10">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+          <h4>Title test </h4>
+          <p>Description test</p>
         </div>
         <div class="col-md-2">
           <a class="btn btn-lg btn-light" href="#">View</a>
         </div>
       </div>
-      <div class="row marketing">
+      
+      <?php foreach($jobs as $job): ?>
+      <div class="row marketing align-items-center">
         <div class="col-md-10">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+          <h4><?php echo $job->job_title ?></h4>
+          <p><?php echo $job->job_description ?></p>
         </div>
         <div class="col-md-2">
           <a class="btn btn-lg btn-light" href="#">View</a>
         </div>
       </div>
-      <div class="row marketing">
-        <div class="col-md-10">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-        </div>
-        <div class="col-md-2">
-          <a class="btn btn-lg btn-light" href="#">View</a>
-        </div>
-      </div>
-      <div class="row marketing">
-        <div class="col-md-10">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-        </div>
-        <div class="col-md-2">
-          <a class="btn btn-lg btn-light" href="#">View</a>
-        </div>
-      </div>
-
-     
+      <?php endforeach; ?>
 
 <?php include 'inc/footer.php';

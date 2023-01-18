@@ -10,7 +10,7 @@ class Database {
     private $error;
     private $stmt;
 
-    private function __construct()
+    public function __construct()
     {
         $dsn = 'mysql:host='. $this->host .';dbname='. $this->dbname;
         $options = array(
