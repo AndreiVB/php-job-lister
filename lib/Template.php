@@ -2,7 +2,7 @@
 
 class Template {
     protected $template;
-    protected array $vars;
+    protected $vars = array();
 
     public function __construct($template)
     {
