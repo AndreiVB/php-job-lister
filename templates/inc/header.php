@@ -15,7 +15,7 @@
   <div class="container">
     <nav class="navbar navbar-expand-sm">
       <div class="container-fluid">
-        <a class="navbar-brand fs-3 text-muted" href="#">JobLister</a>
+        <a class="navbar-brand fs-3 text-muted" href="index.php"><?= SITE_TITLE ?></a>
         <div class=" justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
