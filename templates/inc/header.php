@@ -13,7 +13,7 @@
 <body>
 
   <div class="container">
-    <nav class="navbar navbar-expand-sm">
+    <nav class="navbar navbar-expand-sm border border-2 border-top-0 rounded-bottom mb-5">
       <div class="container-fluid">
         <a class="navbar-brand fs-3 text-muted" href="index.php"><?= SITE_TITLE ?></a>
         <div class=" justify-content-end" id="navbarNav">
@@ -28,4 +28,4 @@
         </div>
       </div>
     </nav>
-    <hr>
+    <?php displayMessage() ?>
