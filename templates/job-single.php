@@ -10,7 +10,15 @@
     <li class="list-group-item"><strong>Company:</strong> <?= $job->contact_email ?></li>
 </ul>
 
-<p class="my-3"><a href="index.php" class="fs-5">Go back</a></p>
+<p class="mt-3 mb-4"><a href="index.php" class="btn btn-secondary  mx-2">Go back</a></p>
+
+<div class="mb-3">
+    <a href="edit.php?id=<?= $job->id ?>" class="btn btn-warning mx-2">Edit job</a>
+    <form style="display:inline" method="POST" action="job.php">
+        <input type="hidden" name="del_id" value="<?= $job->id ?>">
+        <input type="submit" class="btn btn-danger" value="Delete">
+    </form>
+</div>
 
 
 <?php include 'inc/footer.php' ?>
